@@ -4,11 +4,9 @@
 using namespace std;
 
 int main() {
-    // Declarar variables para almacenar los datos personales
     string nombres, apellido, direccion, localidad, provincia, pais, telefono;
     int edad;
 
-    // Solicitar al usuario que ingrese sus datos personales
     cout << "Ingrese sus nombres: ";
     getline(cin, nombres);
     
@@ -17,7 +15,7 @@ int main() {
     
     cout << "Ingrese su edad: ";
     cin >> edad;
-    cin.ignore(); // Limpiar el buffer de entrada
+    cin.ignore(); 
     
     cout << "Ingrese su direccion: ";
     getline(cin, direccion);
@@ -34,7 +32,7 @@ int main() {
     cout << "Ingrese su telefono: ";
     getline(cin, telefono);
 
-    // Imprimir los datos personales del usuario
+
     cout << "\n--- Datos Personales ---\n";
     cout << "Nombres: " << nombres << endl;
     cout << "Apellido: " << apellido << endl;
